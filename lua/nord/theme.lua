@@ -383,14 +383,14 @@ theme.loadTreeSitter = function()
         treesitter.TSCharacter = { fg = nord.nord14_gui }
         treesitter["@comment"] = { fg = nord.nord3_gui_bright }
         treesitter["@conditional"] = { fg = nord.nord9_gui }
-        treesitter["@function"] = { fg = nord.nord13_gui }
+        treesitter["@function"] = { fg = nord.nord15_gui }
         treesitter["@method"] = { fg = nord.nord15_gui }
-        treesitter["@function.builtin"] = { fg = nord.nord13_gui }
+        treesitter["@function.builtin"] = { fg = nord.nord12_gui }
         treesitter["@namespace"] = { fg = nord.nord4_gui }
         treesitter["@field"] = { fg = nord.nord4_gui }
         treesitter["@property"] = { fg = nord.nord10_gui }
         treesitter["@keyword"] = { fg = nord.nord9_gui, style = "bold" }
-        treesitter["@keyword.function"] = { fg = nord.nord13_gui }
+        treesitter["@keyword.function"] = { fg = nord.nord12_gui }
         treesitter["@keyword.return"] = { fg = nord.nord15_gui }
         treesitter["@keyword.operator"] = { fg = nord.nord13_gui }
         treesitter["@repeat"] = { fg = nord.nord9_gui }
