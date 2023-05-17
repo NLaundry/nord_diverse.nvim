@@ -280,7 +280,7 @@ theme.loadTreeSitter = function()
         TSSymbol = { fg = nord.nord15_gui },
         TSType = { fg = nord.nord10_gui },
         TSTypeBuiltin = { fg = nord.nord10_gui },
-        TSTag = { fg = nord.nord14_gui },
+        TSTag = { fg = nord.nord15_gui },
         TSTagDelimiter = { fg = nord.nord3_gui },
         TSText = { fg = nord.nord14_gui },
         TSTextReference = { fg = nord.nord14_gui },
@@ -351,49 +351,50 @@ theme.loadTreeSitter = function()
         TSConstMacro = { fg = nord.nord12_gui },
         TSVariable = { fg = nord.nord4_gui },
         TSTitle = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
-        ["@variable"] = { fg = nord.nord4_gui },
-        ["@variable.builtin"] = { fg = nord.nord4_gui },
-        ["@variable.global"] = { fg = nord.nord4_gui },
-        ["@boolean"] = { fg = nord.nord9_gui },
-        ["@constant.builtin"] = { fg = nord.nord11_gui },
-        ["@constant.macro"] = { fg = nord.nord12_gui },
-        ["@text.title"] = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
-        ["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none },
-        TSComment = { fg = nord.nord3_gui_bright },
-        TSConditional = { fg = nord.nord9_gui },
-        TSFunction = { fg = nord.nord13_gui },
-        TSMethod = { fg = nord.nord15_gui },
-        TSFuncBuiltin = { fg = nord.nord13_gui },
-        TSNamespace = { fg = nord.nord4_gui },
-        TSField = { fg = nord.nord4_gui },
-        TSProperty = { fg = nord.nord10_gui },
-        TSKeyword = { fg = nord.nord9_gui, style = "bold" },
-        TSKeywordFunction = { fg = nord.nord13_gui },
-        TSKeywordReturn = { fg = nord.nord15_gui },
-        TSKeywordOperator = { fg = nord.nord13_gui },
-        TSRepeat = { fg = nord.nord9_gui },
-        TSString = { fg = nord.nord14_gui },
-        TSStringRegex = { fg = nord.nord12_gui },
-        TSStringEscape = { fg = nord.nord11_gui },
-        TSCharacter = { fg = nord.nord14_gui },
-        ["@comment"] = { fg = nord.nord3_gui_bright },
-        ["@conditional"] = { fg = nord.nord9_gui },
-        ["@function"] = { fg = nord.nord13_gui },
-        ["@method"] = { fg = nord.nord15_gui },
-        ["@function.builtin"] = { fg = nord.nord13_gui },
-        ["@namespace"] = { fg = nord.nord4_gui },
-        ["@field"] = { fg = nord.nord4_gui },
-        ["@property"] = { fg = nord.nord10_gui },
-        ["@keyword"] = { fg = nord.nord9_gui, style = "bold" },
-        ["@keyword.function"] = { fg = nord.nord13_gui },
-        ["@keyword.return"] = { fg = nord.nord15_gui },
-        ["@keyword.operator"] = { fg = nord.nord13_gui },
-        ["@repeat"] = { fg = nord.nord9_gui },
-        ["@string"] = { fg = nord.nord14_gui },
-        ["@string.regex"] = { fg = nord.nord12_gui },
-        ["@string.escape"] = { fg = nord.nord11_gui },
-        ["@character"] = { fg = nord.nord14_gui },
     }
+
+        treesitter["@variable"] = { fg = nord.nord4_gui }
+        treesitter["@variable.builtin"] = { fg = nord.nord4_gui }
+        treesitter["@variable.global"] = { fg = nord.nord4_gui }
+        treesitter["@boolean"] = { fg = nord.nord9_gui }
+        treesitter["@constant.builtin"] = { fg = nord.nord11_gui }
+        treesitter["@constant.macro"] = { fg = nord.nord12_gui }
+        treesitter["@text.title"] = { fg = nord.nord10_gui, bg = nord.none, style = "bold" }
+        treesitter["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none }
+        treesitter.TSComment = { fg = nord.nord3_gui_bright }
+        treesitter.TSConditional = { fg = nord.nord9_gui }
+        treesitter.TSFunction = { fg = nord.nord13_gui }
+        treesitter.TSMethod = { fg = nord.nord15_gui }
+        treesitter.TSFuncBuiltin = { fg = nord.nord13_gui }
+        treesitter.TSNamespace = { fg = nord.nord4_gui }
+        treesitter.TSField = { fg = nord.nord4_gui }
+        treesitter.TSProperty = { fg = nord.nord10_gui }
+        treesitter.TSKeyword = { fg = nord.nord9_gui, style = "bold" }
+        treesitter.TSKeywordFunction = { fg = nord.nord13_gui }
+        treesitter.TSKeywordReturn = { fg = nord.nord15_gui }
+        treesitter.TSKeywordOperator = { fg = nord.nord13_gui }
+        treesitter.TSRepeat = { fg = nord.nord9_gui }
+        treesitter.TSString = { fg = nord.nord14_gui }
+        treesitter.TSStringRegex = { fg = nord.nord12_gui }
+        treesitter.TSStringEscape = { fg = nord.nord11_gui }
+        treesitter.TSCharacter = { fg = nord.nord14_gui }
+        treesitter["@comment"] = { fg = nord.nord3_gui_bright }
+        treesitter["@conditional"] = { fg = nord.nord9_gui }
+        treesitter["@function"] = { fg = nord.nord13_gui }
+        treesitter["@method"] = { fg = nord.nord15_gui }
+        treesitter["@function.builtin"] = { fg = nord.nord13_gui }
+        treesitter["@namespace"] = { fg = nord.nord4_gui }
+        treesitter["@field"] = { fg = nord.nord4_gui }
+        treesitter["@property"] = { fg = nord.nord10_gui }
+        treesitter["@keyword"] = { fg = nord.nord9_gui, style = "bold" }
+        treesitter["@keyword.function"] = { fg = nord.nord13_gui }
+        treesitter["@keyword.return"] = { fg = nord.nord15_gui }
+        treesitter["@keyword.operator"] = { fg = nord.nord13_gui }
+        treesitter["@repeat"] = { fg = nord.nord9_gui }
+        treesitter["@string"] = { fg = nord.nord14_gui }
+        treesitter["@string.regex"] = { fg = nord.nord12_gui }
+        treesitter["@string.escape"] = { fg = nord.nord11_gui }
+        treesitter["@character"] = { fg = nord.nord14_gui }
 
     -- treesitter.TSVariableBuiltin = { fg = nord.nord4_gui, style = bold }
     -- treesitter.TSBoolean = { fg = nord.nord9_gui, style = bold }
