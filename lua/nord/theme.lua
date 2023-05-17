@@ -363,18 +363,17 @@ theme.loadTreeSitter = function()
         treesitter["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none }
         treesitter.TSComment = { fg = nord.nord3_gui_bright }
         treesitter.TSConditional = { fg = nord.nord9_gui }
-        treesitter.TSFunction = { fg = nord.nord13_gui }
+        treesitter.TSFunction = { fg = nord.nord10_gui }
         treesitter.TSMethod = { fg = nord.nord15_gui }
         -- treesitter.TSFuncBuiltin = { fg = nord.nord13_gui }
         treesitter.TSNamespace = { fg = nord.nord4_gui }
         treesitter.TSField = { fg = nord.nord4_gui }
         treesitter.TSProperty = { fg = nord.nord10_gui }
 
-       treesitter.TSKeywordFunction = { fg = nord.nord13_gui } -- 'def' keyword in Pytho
+       treesitter.TSKeywordFunction = { fg = nord.nord15 } -- 'def' keyword in Pytho
        treesitter.TSFuncBuiltin = { fg = nord.nord9_gui } -- Function names
        treesitter.TSParameter = { fg = nord.nord11_gui } -- Function parameters
         treesitter.TSKeyword = { fg = nord.nord9_gui, style = "bold" }
-        -- treesitter.TSKeywordFunction = { fg = nord.nord13_gui }
         treesitter.TSKeywordReturn = { fg = nord.nord15_gui }
         treesitter.TSKeywordOperator = { fg = nord.nord13_gui }
         treesitter.TSRepeat = { fg = nord.nord9_gui }
@@ -399,63 +398,6 @@ theme.loadTreeSitter = function()
         treesitter["@string.regex"] = { fg = nord.nord12_gui }
         treesitter["@string.escape"] = { fg = nord.nord11_gui }
         treesitter["@character"] = { fg = nord.nord14_gui }
-
-    -- treesitter.TSVariableBuiltin = { fg = nord.nord4_gui, style = bold }
-    -- treesitter.TSBoolean = { fg = nord.nord9_gui, style = bold }
-    -- treesitter.TSConstBuiltin = { fg = nord.nord7_gui, style = bold }
-    -- treesitter.TSConstMacro = { fg = nord.nord7_gui, style = bold }
-    -- treesitter.TSVariable = { fg = nord.nord4_gui, style = bold }
-    -- treesitter.TSTitle = { fg = nord.nord10_gui, bg = nord.none, style = bold }
-    -- treesitter["@variable"] = { fg = nord.nord4_gui, style = bold }
-    -- treesitter["@variable.builtin"] = { fg = nord.nord4_gui, style = bold }
-    -- treesitter["@variable.global"] = { fg = nord.nord4_gui, style = bold }
-    -- treesitter["@boolean"] = { fg = nord.nord9_gui, style = bold }
-    -- treesitter["@constant.builtin"] = { fg = nord.nord7_gui, style = bold }
-    -- treesitter["@constant.macro"] = { fg = nord.nord7_gui, style = bold }
-    -- treesitter["@text.title"] = { fg = nord.nord10_gui, bg = nord.none, style = bold }
-    -- treesitter["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none, style = bold }
-    -- -- Comments
-    -- treesitter.TSComment = { fg = nord.nord3_gui_bright, style = italic }
-    -- -- Conditionals
-    -- treesitter.TSConditional = { fg = nord.nord9_gui, style = italic } -- For keywords related to conditionnals.
-    -- -- Function names
-    -- treesitter.TSFunction = { fg = nord.nord8_gui, style = italic } -- For fuction (calls and definitions).
-    -- treesitter.TSMethod = { fg = nord.nord7_gui, style = italic } -- For method calls and definitions.
-    -- treesitter.TSFuncBuiltin = { fg = nord.nord8_gui, style = italic }
-    -- -- Namespaces and property accessors
-    -- treesitter.TSNamespace = { fg = nord.nord4_gui, style = italic } -- For identifiers referring to modules and namespaces.
-    -- treesitter.TSField = { fg = nord.nord4_gui, style = italic } -- For fields.
-    -- treesitter.TSProperty = { fg = nord.nord10_gui, style = italic } -- Same as `TSField`, but when accessing, not declaring.
-    -- -- Language keywords
-    -- treesitter.TSKeyword = { fg = nord.nord9_gui, style = italic } -- For keywords that don't fall in other categories.
-    -- treesitter.TSKeywordFunction = { fg = nord.nord8_gui, style = italic }
-    -- treesitter.TSKeywordReturn = { fg = nord.nord8_gui, style = italic }
-    -- treesitter.TSKeywordOperator = { fg = nord.nord8_gui, style = italic }
-    -- treesitter.TSRepeat = { fg = nord.nord9_gui, style = italic } -- For keywords related to loops.
-    -- -- Strings
-    -- treesitter.TSString = { fg = nord.nord14_gui, style = italic } -- For strings.
-    -- treesitter.TSStringRegex = { fg = nord.nord7_gui, style = italic } -- For regexes.
-    -- treesitter.TSStringEscape = { fg = nord.nord15_gui, style = italic } -- For escape characters within a string.
-    -- treesitter.TSCharacter = { fg = nord.nord14_gui, style = italic } -- For characters.
-
-    -- treesitter["@comment"] = { fg = nord.nord3_gui_bright, style = italic }
-    -- treesitter["@conditional"] = { fg = nord.nord9_gui, style = italic }
-    -- treesitter["@function"] = { fg = nord.nord8_gui, style = italic }
-    -- treesitter["@method"] = { fg = nord.nord8_gui, style = italic }
-    -- treesitter["@function.builtin"] = { fg = nord.nord8_gui, style = italic }
-    -- treesitter["@namespace"] = { fg = nord.nord4_gui, style = italic }
-    -- treesitter["@field"] = { fg = nord.nord4_gui, style = italic }
-    -- treesitter["@property"] = { fg = nord.nord10_gui, style = italic }
-    -- treesitter["@keyword"] = { fg = nord.nord9_gui, style = italic }
-    -- treesitter["@keyword.function"] = { fg = nord.nord8_gui, style = italic }
-    -- treesitter["@keyword.return"] = { fg = nord.nord8_gui, style = italic }
-    -- treesitter["@keyword.operator"] = { fg = nord.nord8_gui, style = italic }
-    -- treesitter["@repeat"] = { fg = nord.nord9_gui, style = italic }
-    -- treesitter["@string"] = { fg = nord.nord14_gui, style = italic }
-    -- treesitter["@string.regex"] = { fg = nord.nord7_gui, style = italic }
-    -- treesitter["@string.escape"] = { fg = nord.nord15_gui, style = italic }
-    -- treesitter["@character"] = { fg = nord.nord14_gui, style = italic }
-
     return treesitter
 end
 
