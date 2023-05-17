@@ -52,7 +52,7 @@ theme.loadSyntax = function()
 
         Special = { fg = nord.nord15_gui },
         SpecialChar = { fg = nord.nord13_gui },
-        Tag = { fg = nord.nord14_gui },
+        Tag = { fg = nord.nord15_gui },
         Delimiter = { fg = nord.nord3_gui },
 
         Debug = { fg = nord.nord11_gui },
@@ -280,8 +280,6 @@ theme.loadTreeSitter = function()
         TSSymbol = { fg = nord.nord15_gui },
         TSType = { fg = nord.nord10_gui },
         TSTypeBuiltin = { fg = nord.nord10_gui },
-        TSTag = { fg = nord.nord15_gui },
-        TSTagDelimiter = { fg = nord.nord3_gui },
         TSText = { fg = nord.nord14_gui },
         TSTextReference = { fg = nord.nord14_gui },
         TSEmphasis = { fg = nord.nord9_gui },
@@ -351,6 +349,9 @@ theme.loadTreeSitter = function()
         TSConstMacro = { fg = nord.nord12_gui },
         TSVariable = { fg = nord.nord4_gui },
         TSTitle = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
+        
+        TSTag = { fg = nord.nord15_gui },
+        TSTagDelimiter = { fg = nord.nord3_gui },
     }
 
         treesitter["@variable"] = { fg = nord.nord4_gui }
