@@ -306,7 +306,7 @@ theme.loadTreeSitter = function()
         ["@symbol"] = { fg = nord.nord15_gui },
         ["@type"] = { fg = nord.nord10_gui },
         ["@type.builtin"] = { fg = nord.nord10_gui },
-        ["@tag"] = { fg = nord.nord14_gui },
+        ["@tag"] = { fg = nord.nord15_gui },
         ["@tag.delimiter"] = { fg = nord.nord3_gui },
         ["@text"] = { fg = nord.nord14_gui },
         ["@text.reference"] = { fg = nord.nord14_gui },
@@ -325,7 +325,7 @@ theme.loadTreeSitter = function()
         ["@text.note"] = { fg = nord.nord12_gui, bg = nord.none },
         ["@text.warning"] = { fg = nord.nord11_gui, bg = nord.none },
         ["@text.danger"] = { fg = nord.nord11_gui, bg = nord.none },
-        ["@tag.attribute"] = { fg = nord.nord14_gui },
+        ["@tag.attribute"] = { fg = nord.nord15_gui },
         ["@string.special"] = { fg = nord.nord13_gui },
 
         -- @todo Missing highlights
