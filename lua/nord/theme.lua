@@ -365,12 +365,16 @@ theme.loadTreeSitter = function()
         treesitter.TSConditional = { fg = nord.nord9_gui }
         treesitter.TSFunction = { fg = nord.nord13_gui }
         treesitter.TSMethod = { fg = nord.nord15_gui }
-        treesitter.TSFuncBuiltin = { fg = nord.nord13_gui }
+        -- treesitter.TSFuncBuiltin = { fg = nord.nord13_gui }
         treesitter.TSNamespace = { fg = nord.nord4_gui }
         treesitter.TSField = { fg = nord.nord4_gui }
         treesitter.TSProperty = { fg = nord.nord10_gui }
+
+       treesitter.TSKeywordFunction = { fg = nord.nord13_gui } -- 'def' keyword in Pytho
+       treesitter.TSFuncBuiltin = { fg = nord.nord9_gui } -- Function names
+       treesitter.TSParameter = { fg = nord.nord11_gui } -- Function parameters
         treesitter.TSKeyword = { fg = nord.nord9_gui, style = "bold" }
-        treesitter.TSKeywordFunction = { fg = nord.nord13_gui }
+        -- treesitter.TSKeywordFunction = { fg = nord.nord13_gui }
         treesitter.TSKeywordReturn = { fg = nord.nord15_gui }
         treesitter.TSKeywordOperator = { fg = nord.nord13_gui }
         treesitter.TSRepeat = { fg = nord.nord9_gui }
