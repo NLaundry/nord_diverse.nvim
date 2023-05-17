@@ -264,61 +264,63 @@ theme.loadTreeSitter = function()
     -- TreeSitter highlight groups
 
     local treesitter = {
-        TSConstructor = { fg = nord.nord9_gui }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-        TSConstant = { fg = nord.nord13_gui }, -- For constants
-        TSFloat = { fg = nord.nord15_gui }, -- For floats
-        TSNumber = { fg = nord.nord15_gui }, -- For all number
-        TSAttribute = { fg = nord.nord15_gui }, -- (unstable) TODO: docs
-        TSError = { fg = nord.nord11_gui }, -- For syntax/parser errors.
-        TSException = { fg = nord.nord15_gui }, -- For exception related keywords.
-        TSFuncMacro = { fg = nord.nord7_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-        TSInclude = { fg = nord.nord9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-        TSLabel = { fg = nord.nord15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
-        TSOperator = { fg = nord.nord9_gui }, -- For any operator: `+`, but also `->` and `*` in C.
-        TSParameter = { fg = nord.nord10_gui }, -- For parameters of a function.
-        TSParameterReference = { fg = nord.nord10_gui }, -- For references to parameters of a function.
-        TSPunctDelimiter = { fg = nord.nord8_gui }, -- For delimiters ie: `.`
-        TSPunctBracket = { fg = nord.nord8_gui }, -- For brackets and parens.
-        TSPunctSpecial = { fg = nord.nord8_gui }, -- For special punctutation that does not fall in the catagories before.
-        TSSymbol = { fg = nord.nord15_gui }, -- For identifiers referring to symbols or atoms.
-        TSType = { fg = nord.nord9_gui }, -- For types.
-        TSTypeBuiltin = { fg = nord.nord9_gui }, -- For builtin types.
-        TSTag = { fg = nord.nord4_gui }, -- Tags like html tag names.
-        TSTagDelimiter = { fg = nord.nord15_gui }, -- Tag delimiter like `<` `>` `/`
-        TSText = { fg = nord.nord4_gui }, -- For strings considenord11_gui text in a markup language.
-        TSTextReference = { fg = nord.nord15_gui }, -- FIXME
-        TSEmphasis = { fg = nord.nord10_gui }, -- For text to be represented with emphasis.
-        TSUnderline = { fg = nord.nord4_gui, bg = nord.none, style = "underline" }, -- For text to be represented with an underline.
-        TSLiteral = { fg = nord.nord4_gui }, -- Literal text.
-        TSURI = { fg = nord.nord14_gui }, -- Any URI like a link or email.
-        TSAnnotation = { fg = nord.nord11_gui }, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
-        ["@constructor"] = { fg = nord.nord9_gui },
-        ["@constant"] = { fg = nord.nord13_gui },
-        ["@float"] = { fg = nord.nord15_gui },
-        ["@number"] = { fg = nord.nord15_gui },
-        ["@attribute"] = { fg = nord.nord15_gui },
+        TSConstructor = { fg = nord.nord10_gui },
+        TSConstant = { fg = nord.nord11_gui },
+        TSFloat = { fg = nord.nord8_gui },
+        TSNumber = { fg = nord.nord8_gui },
+        TSAttribute = { fg = nord.nord11_gui },
+        TSError = { fg = nord.nord11_gui },
+        TSException = { fg = nord.nord15_gui },
+        TSFuncMacro = { fg = nord.nord4_gui },
+        TSInclude = { fg = nord.nord4_gui },
+        TSLabel = { fg = nord.nord9_gui },
+        TSOperator = { fg = nord.nord6_gui },
+        TSParameter = { fg = nord.nord9_gui },
+        TSParameterReference = { fg = nord.nord9_gui },
+        TSPunctDelimiter = { fg = nord.nord3_gui },
+        TSPunctBracket = { fg = nord.nord3_gui },
+        TSPunctSpecial = { fg = nord.nord3_gui },
+        TSSymbol = { fg = nord.nord15_gui },
+        TSType = { fg = nord.nord10_gui },
+        TSTypeBuiltin = { fg = nord.nord10_gui },
+        TSTag = { fg = nord.nord14_gui },
+        TSTagDelimiter = { fg = nord.nord3_gui },
+        TSText = { fg = nord.nord14_gui },
+        TSTextReference = { fg = nord.nord15_gui },
+        TSEmphasis = { fg = nord.nord9_gui },
+        TSUnderline = { fg = nord.nord8_gui, bg = nord.none, style = "underline" },
+        TSLiteral = { fg = nord.nord14_gui },
+        TSURI = { fg = nord.nord7_gui },
+        TSAnnotation = { fg = nord.nord11_gui },
+
+        ["@constructor"] = { fg = nord.nord10_gui },
+        ["@constant"] = { fg = nord.nord11_gui },
+        ["@float"] = { fg = nord.nord8_gui },
+        ["@number"] = { fg = nord.nord8_gui },
+        ["@attribute"] = { fg = nord.nord11_gui },
         ["@error"] = { fg = nord.nord11_gui },
         ["@exception"] = { fg = nord.nord15_gui },
-        ["@funtion.macro"] = { fg = nord.nord7_gui },
-        ["@include"] = { fg = nord.nord9_gui },
-        ["@label"] = { fg = nord.nord15_gui },
-        ["@operator"] = { fg = nord.nord9_gui },
-        ["@parameter"] = { fg = nord.nord10_gui },
-        ["@punctuation.delimiter"] = { fg = nord.nord8_gui },
-        ["@punctuation.bracket"] = { fg = nord.nord8_gui },
-        ["@punctuation.special"] = { fg = nord.nord8_gui },
+        ["@funtion.macro"] = { fg = nord.nord4_gui },
+        ["@include"] = { fg = nord.nord4_gui },
+        ["@label"] = { fg = nord.nord9_gui },
+        ["@operator"] = { fg = nord.nord6_gui },
+        ["@parameter"] = { fg = nord.nord9_gui },
+        ["@punctuation.delimiter"] = { fg = nord.nord3_gui },
+        ["@punctuation.bracket"] = { fg = nord.nord3_gui },
+        ["@punctuation.special"] = { fg = nord.nord3_gui },
         ["@symbol"] = { fg = nord.nord15_gui },
-        ["@type"] = { fg = nord.nord9_gui },
-        ["@type.builtin"] = { fg = nord.nord9_gui },
-        ["@tag"] = { fg = nord.nord4_gui },
-        ["@tag.delimiter"] = { fg = nord.nord15_gui },
-        ["@text"] = { fg = nord.nord4_gui },
+        ["@type"] = { fg = nord.nord10_gui },
+        ["@type.builtin"] = { fg = nord.nord10_gui },
+        ["@tag"] = { fg = nord.nord14_gui },
+        ["@tag.delimiter"] = { fg = nord.nord3_gui },
+        ["@text"] = { fg = nord.nord14_gui },
         ["@text.reference"] = { fg = nord.nord15_gui },
-        ["@text.emphasis"] = { fg = nord.nord10_gui },
-        ["@text.underline"] = { fg = nord.nord4_gui, bg = nord.none, style = "underline" },
-        ["@text.literal"] = { fg = nord.nord4_gui },
-        ["@text.uri"] = { fg = nord.nord14_gui },
-        ["@text.strike"] = { fg = nord.nord4_gui, style = "strikethrough" },
+        ["@text.emphasis"] = { fg = nord.nord9_gui },
+        ["@text.underline"] = { fg = nord.nord8_gui, bg = nord.none, style = "underline" },
+        ["@text.literal"] = { fg = nord.nord14_gui },
+        ["@text.uri"] = { fg = nord.nord7_gui },
+        ["@text.strike"] = { fg = nord.nord14_gui, style = "strikethrough" },
+
 
         -- @todo Missing highlights
         -- @function.call
