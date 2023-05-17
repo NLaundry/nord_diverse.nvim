@@ -28,67 +28,64 @@ end
 theme.loadSyntax = function()
     -- Syntax highlight groups
     return {
-        Type = { fg = nord.nord10_gui }, -- int, long, char, etc.
-        StorageClass = { fg = nord.nord12_gui }, -- static, register, volatile, etc.
-        Structure = { fg = nord.nord7_gui }, -- struct, union, enum, etc.
-        Typedef = { fg = nord.nord14_gui }, -- A typedef
+        Type = { fg = nord.nord10_gui },
+        StorageClass = { fg = nord.nord12_gui },
+        Structure = { fg = nord.nord7_gui },
+        Typedef = { fg = nord.nord14_gui },
 
-        Constant = { fg = nord.nord11_gui }, -- any constant
-        Character = { fg = nord.nord5_gui }, -- any character constant: 'c', '\n'
-        Number = { fg = nord.nord8_gui }, -- a number constant: 5
-        Boolean = { fg = nord.nord11_gui }, -- a boolean constant: TRUE, false
-        Float = { fg = nord.nord8_gui }, -- a floating point constant: 2.3e10
+        Constant = { fg = nord.nord11_gui },
+        Character = { fg = nord.nord5_gui },
+        Number = { fg = nord.nord11_gui },
+        Boolean = { fg = nord.nord11_gui },
+        Float = { fg = nord.nord13_gui },
 
-        Statement = { fg = nord.nord13_gui }, -- any statement
-        Label = { fg = nord.nord9_gui }, -- case, default, etc.
-        Operator = { fg = nord.nord6_gui }, -- sizeof", "+", "*", etc.
-        Exception = { fg = nord.nord15_gui }, -- try, catch, throw
+        Statement = { fg = nord.nord13_gui },
+        Label = { fg = nord.nord9_gui },
+        Operator = { fg = nord.nord6_gui },
+        Exception = { fg = nord.nord15_gui },
 
-        PreProc = { fg = nord.nord4_gui }, -- generic Preprocessor
-        Include = { fg = nord.nord4_gui }, -- preprocessor #include
-        Define = { fg = nord.nord4_gui }, -- preprocessor #define
-        Macro = { fg = nord.nord4_gui }, -- same as Define
-        PreCondit = { fg = nord.nord4_gui }, -- preprocessor #if, #else, #endif, etc.
+        PreProc = { fg = nord.nord4_gui },
+        Include = { fg = nord.nord10_gui },
+        Define = { fg = nord.nord10_gui },
+        Macro = { fg = nord.nord10_gui },
+        PreCondit = { fg = nord.nord10_gui },
 
-        Special = { fg = nord.nord15_gui }, -- any special symbol
-        SpecialChar = { fg = nord.nord5_gui }, -- special character in a constant
-        Tag = { fg = nord.nord14_gui }, -- you can use CTRL-] on this
-        Delimiter = { fg = nord.nord3_gui }, -- character that needs attention like , or .
+        Special = { fg = nord.nord15_gui },
+        SpecialChar = { fg = nord.nord13_gui },
+        Tag = { fg = nord.nord14_gui },
+        Delimiter = { fg = nord.nord3_gui },
 
-        Debug = { fg = nord.nord11_gui }, -- debugging statements
-        Error = { fg = nord.nord11_gui }, -- any erroneous construct
+        Debug = { fg = nord.nord11_gui },
+        Error = { fg = nord.nord11_gui },
 
-        Ignore = { fg = nord.nord3_gui }, -- left blank, hidden
+        Ignore = { fg = nord.nord3_gui },
         Conceal = { fg = nord.none, bg = nord.nord0_gui },
 
-        Underlined = { fg = nord.nord8_gui, bg = nord.none, style = "underline" }, -- text that stands out, HTML links
-        htmlLink = { fg = nord.nord7_gui, style = "underline" },
+        Underlined = { fg = nord.nord8_gui, bg = nord.none },
+        htmlLink = { fg = nord.nord7_gui },
 
         markdownH1Delimiter = { fg = nord.nord10_gui },
         markdownH2Delimiter = { fg = nord.nord10_gui },
         markdownH3Delimiter = { fg = nord.nord10_gui },
 
-        htmlH1 = { fg = nord.nord10_gui, style = bold },
-        htmlH2 = { fg = nord.nord9_gui, style = bold },
-        htmlH3 = { fg = nord.nord8_gui, style = bold },
-        htmlH4 = { fg = nord.nord4_gui, style = bold },
-        htmlH5 = { fg = nord.nord4_gui, style = bold },
+        htmlH1 = { fg = nord.nord10_gui },
+        htmlH2 = { fg = nord.nord9_gui },
+        htmlH3 = { fg = nord.nord8_gui },
+        htmlH4 = { fg = nord.nord4_gui },
+        htmlH5 = { fg = nord.nord4_gui },
 
-        markdownH1 = { fg = nord.nord10_gui, style = bold },
-        markdownH2 = { fg = nord.nord9_gui, style = bold },
-        markdownH3 = { fg = nord.nord8_gui, style = bold },
+        markdownH1 = { fg = nord.nord10_gui },
+        markdownH2 = { fg = nord.nord9_gui },
+        markdownH3 = { fg = nord.nord8_gui },
 
-        Comment = { fg = nord.nord3_gui_bright, style = italic }, -- italic comments
-
-        Conditional = { fg = nord.nord13_gui, style = italic }, -- italic if, then, else, endif, switch, etc.
-        Function = { fg = nord.nord8_gui, style = italic }, -- italic funtion names
-        Identifier = { fg = nord.nord9_gui, style = italic }, -- any variable name
-        Keyword = { fg = nord.nord13_gui, style = italic }, -- italic for, do, while, etc.
-        Repeat = { fg = nord.nord13_gui, style = italic }, -- italic any other keyword
-
-        String = { fg = nord.nord14_gui, style = italic }, -- any string
-
-        Todo = { fg = nord.nord11_gui, bg = nord.none, style = bold_italic }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+        Comment = { fg = nord.nord3_gui_bright },
+        Conditional = { fg = nord.nord13_gui },
+        Function = { fg = nord.nord8_gui },
+        Identifier = { fg = nord.nord9_gui },
+        Keyword = { fg = nord.nord13_gui },
+        Repeat = { fg = nord.nord13_gui },
+        String = { fg = nord.nord14_gui },
+        Todo = { fg = nord.nord11_gui, bg = nord.none },
     }
 end
 
@@ -265,18 +262,18 @@ theme.loadTreeSitter = function()
 
     local treesitter = {
         TSConstructor = { fg = nord.nord10_gui },
-        TSConstant = { fg = nord.nord11_gui },
-        TSFloat = { fg = nord.nord8_gui },
-        TSNumber = { fg = nord.nord8_gui },
-        TSAttribute = { fg = nord.nord11_gui },
+        TSConstant = { fg = nord.nord12_gui },
+        TSFloat = { fg = nord.nord13_gui },
+        TSNumber = { fg = nord.nord11_gui },
+        TSAttribute = { fg = nord.nord12_gui },
         TSError = { fg = nord.nord11_gui },
         TSException = { fg = nord.nord15_gui },
         TSFuncMacro = { fg = nord.nord4_gui },
-        TSInclude = { fg = nord.nord4_gui },
-        TSLabel = { fg = nord.nord9_gui },
+        TSInclude = { fg = nord.nord10_gui },
+        TSLabel = { fg = nord.nord13_gui },
         TSOperator = { fg = nord.nord6_gui },
-        TSParameter = { fg = nord.nord9_gui },
-        TSParameterReference = { fg = nord.nord9_gui },
+        TSParameter = { fg = nord.nord13_gui },
+        TSParameterReference = { fg = nord.nord13_gui },
         TSPunctDelimiter = { fg = nord.nord3_gui },
         TSPunctBracket = { fg = nord.nord3_gui },
         TSPunctSpecial = { fg = nord.nord3_gui },
@@ -286,25 +283,25 @@ theme.loadTreeSitter = function()
         TSTag = { fg = nord.nord14_gui },
         TSTagDelimiter = { fg = nord.nord3_gui },
         TSText = { fg = nord.nord14_gui },
-        TSTextReference = { fg = nord.nord15_gui },
+        TSTextReference = { fg = nord.nord14_gui },
         TSEmphasis = { fg = nord.nord9_gui },
-        TSUnderline = { fg = nord.nord8_gui, bg = nord.none, style = "underline" },
+        TSUnderline = { fg = nord.nord8_gui, bg = nord.none },
         TSLiteral = { fg = nord.nord14_gui },
         TSURI = { fg = nord.nord7_gui },
-        TSAnnotation = { fg = nord.nord11_gui },
+        TSAnnotation = { fg = nord.nord12_gui },
 
         ["@constructor"] = { fg = nord.nord10_gui },
-        ["@constant"] = { fg = nord.nord11_gui },
-        ["@float"] = { fg = nord.nord8_gui },
-        ["@number"] = { fg = nord.nord8_gui },
-        ["@attribute"] = { fg = nord.nord11_gui },
+        ["@constant"] = { fg = nord.nord12_gui },
+        ["@float"] = { fg = nord.nord13_gui },
+        ["@number"] = { fg = nord.nord11_gui },
+        ["@attribute"] = { fg = nord.nord12_gui },
         ["@error"] = { fg = nord.nord11_gui },
         ["@exception"] = { fg = nord.nord15_gui },
         ["@funtion.macro"] = { fg = nord.nord4_gui },
-        ["@include"] = { fg = nord.nord4_gui },
-        ["@label"] = { fg = nord.nord9_gui },
+        ["@include"] = { fg = nord.nord10_gui },
+        ["@label"] = { fg = nord.nord13_gui },
         ["@operator"] = { fg = nord.nord6_gui },
-        ["@parameter"] = { fg = nord.nord9_gui },
+        ["@parameter"] = { fg = nord.nord13_gui },
         ["@punctuation.delimiter"] = { fg = nord.nord3_gui },
         ["@punctuation.bracket"] = { fg = nord.nord3_gui },
         ["@punctuation.special"] = { fg = nord.nord3_gui },
@@ -314,24 +311,24 @@ theme.loadTreeSitter = function()
         ["@tag"] = { fg = nord.nord14_gui },
         ["@tag.delimiter"] = { fg = nord.nord3_gui },
         ["@text"] = { fg = nord.nord14_gui },
-        ["@text.reference"] = { fg = nord.nord15_gui },
+        ["@text.reference"] = { fg = nord.nord14_gui },
         ["@text.emphasis"] = { fg = nord.nord9_gui },
-        ["@text.underline"] = { fg = nord.nord8_gui, bg = nord.none, style = "underline" },
+        ["@text.underline"] = { fg = nord.nord8_gui, bg = nord.none },
         ["@text.literal"] = { fg = nord.nord14_gui },
         ["@text.uri"] = { fg = nord.nord7_gui },
-        ["@text.strike"] = { fg = nord.nord14_gui, style = "strikethrough" },
+        ["@text.strike"] = { fg = nord.nord14_gui },
 
-        ["@function.call"] = { fg = nord.nord8_gui, style = italic }, -- italic function calls
-        ["@method.call"] = { fg = nord.nord8_gui, style = italic }, -- italic method calls
-        ["@type.qualifier"] = { fg = nord.nord13_gui }, -- italic if, then, else, endif, switch, etc.
-        ["@text.math"] = { fg = nord.nord8_gui }, -- a floating point constant: 2.3e10
-        ["@text.environment"] = { fg = nord.nord4_gui }, -- generic Preprocessor
-        ["@text.environment.name"] = { fg = nord.nord14_gui }, -- any string
-        ["@text.note"] = { fg = nord.nord11_gui, bg = nord.none, style = bold_italic }, -- anything that needs extra attention
-        ["@text.warning"] = { fg = nord.nord11_gui, bg = nord.none, style = bold_italic }, -- anything that needs extra attention
-        ["@text.danger"] = { fg = nord.nord11_gui, bg = nord.none, style = bold_italic }, -- anything that needs extra attention
-        ["@tag.attribute"] = { fg = nord.nord14_gui }, -- you can use CTRL-] on this
-        ["@string.special"] = { fg = nord.nord5_gui }, -- special character in a constant
+        ["@function.call"] = { fg = nord.nord8_gui },
+        ["@method.call"] = { fg = nord.nord8_gui },
+        ["@type.qualifier"] = { fg = nord.nord13_gui },
+        ["@text.math"] = { fg = nord.nord13_gui },
+        ["@text.environment"] = { fg = nord.nord4_gui },
+        ["@text.environment.name"] = { fg = nord.nord14_gui },
+        ["@text.note"] = { fg = nord.nord12_gui, bg = nord.none },
+        ["@text.warning"] = { fg = nord.nord11_gui, bg = nord.none },
+        ["@text.danger"] = { fg = nord.nord11_gui, bg = nord.none },
+        ["@tag.attribute"] = { fg = nord.nord14_gui },
+        ["@string.special"] = { fg = nord.nord13_gui },
 
         -- @todo Missing highlights
         -- @function.call
@@ -348,54 +345,54 @@ theme.loadTreeSitter = function()
         --
         --
         --
-        TSVariableBuiltin = { fg = nord.nord4_gui, style = "bold" },
-        TSBoolean = { fg = nord.nord9_gui, style = "bold" },
-        TSConstBuiltin = { fg = nord.nord7_gui, style = "bold" },
-        TSConstMacro = { fg = nord.nord7_gui, style = "bold" },
-        TSVariable = { fg = nord.nord4_gui, style = "bold" },
+        TSVariableBuiltin = { fg = nord.nord4_gui },
+        TSBoolean = { fg = nord.nord9_gui },
+        TSConstBuiltin = { fg = nord.nord11_gui },
+        TSConstMacro = { fg = nord.nord12_gui },
+        TSVariable = { fg = nord.nord4_gui },
         TSTitle = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
-        ["@variable"] = { fg = nord.nord4_gui, style = "bold" },
-        ["@variable.builtin"] = { fg = nord.nord4_gui, style = "bold" },
-        ["@variable.global"] = { fg = nord.nord4_gui, style = "bold" },
-        ["@boolean"] = { fg = nord.nord9_gui, style = "bold" },
-        ["@constant.builtin"] = { fg = nord.nord7_gui, style = "bold" },
-        ["@constant.macro"] = { fg = nord.nord7_gui, style = "bold" },
+        ["@variable"] = { fg = nord.nord4_gui },
+        ["@variable.builtin"] = { fg = nord.nord4_gui },
+        ["@variable.global"] = { fg = nord.nord4_gui },
+        ["@boolean"] = { fg = nord.nord9_gui },
+        ["@constant.builtin"] = { fg = nord.nord11_gui },
+        ["@constant.macro"] = { fg = nord.nord12_gui },
         ["@text.title"] = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
-        ["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
-        TSComment = { fg = nord.nord3_gui_bright, style = "italic" },
-        TSConditional = { fg = nord.nord9_gui, style = "italic" },
-        TSFunction = { fg = nord.nord8_gui, style = "italic" },
-        TSMethod = { fg = nord.nord7_gui, style = "italic" },
-        TSFuncBuiltin = { fg = nord.nord8_gui, style = "italic" },
-        TSNamespace = { fg = nord.nord4_gui, style = "italic" },
-        TSField = { fg = nord.nord4_gui, style = "italic" },
-        TSProperty = { fg = nord.nord10_gui, style = "italic" },
-        TSKeyword = { fg = nord.nord9_gui, style = "italic" },
-        TSKeywordFunction = { fg = nord.nord8_gui, style = "italic" },
-        TSKeywordReturn = { fg = nord.nord8_gui, style = "italic" },
-        TSKeywordOperator = { fg = nord.nord8_gui, style = "italic" },
-        TSRepeat = { fg = nord.nord9_gui, style = "italic" },
-        TSString = { fg = nord.nord14_gui, style = "italic" },
-        TSStringRegex = { fg = nord.nord7_gui, style = "italic" },
-        TSStringEscape = { fg = nord.nord15_gui, style = "italic" },
-        TSCharacter = { fg = nord.nord14_gui, style = "italic" },
-        ["@comment"] = { fg = nord.nord3_gui_bright, style = "italic" },
-        ["@conditional"] = { fg = nord.nord9_gui, style = "italic" },
-        ["@function"] = { fg = nord.nord8_gui, style = "italic" },
-        ["@method"] = { fg = nord.nord8_gui, style = "italic" },
-        ["@function.builtin"] = { fg = nord.nord8_gui, style = "italic" },
-        ["@namespace"] = { fg = nord.nord4_gui, style = "italic" },
-        ["@field"] = { fg = nord.nord4_gui, style = "italic" },
-        ["@property"] = { fg = nord.nord10_gui, style = "italic" },
-        ["@keyword"] = { fg = nord.nord9_gui, style = "italic" },
-        ["@keyword.function"] = { fg = nord.nord8_gui, style = "italic" },
-        ["@keyword.return"] = { fg = nord.nord8_gui, style = "italic" },
-        ["@keyword.operator"] = { fg = nord.nord8_gui, style = "italic" },
-        ["@repeat"] = { fg = nord.nord9_gui, style = "italic" },
-        ["@string"] = { fg = nord.nord14_gui, style = "italic" },
-        ["@string.regex"] = { fg = nord.nord7_gui, style = "italic" },
-        ["@string.escape"] = { fg = nord.nord15_gui, style = "italic" },
-        ["@character"] = { fg = nord.nord14_gui, style = "italic" },
+        ["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none },
+        TSComment = { fg = nord.nord3_gui_bright },
+        TSConditional = { fg = nord.nord9_gui },
+        TSFunction = { fg = nord.nord13_gui },
+        TSMethod = { fg = nord.nord15_gui },
+        TSFuncBuiltin = { fg = nord.nord13_gui },
+        TSNamespace = { fg = nord.nord4_gui },
+        TSField = { fg = nord.nord4_gui },
+        TSProperty = { fg = nord.nord10_gui },
+        TSKeyword = { fg = nord.nord9_gui, style = "bold" },
+        TSKeywordFunction = { fg = nord.nord13_gui },
+        TSKeywordReturn = { fg = nord.nord15_gui },
+        TSKeywordOperator = { fg = nord.nord13_gui },
+        TSRepeat = { fg = nord.nord9_gui },
+        TSString = { fg = nord.nord14_gui },
+        TSStringRegex = { fg = nord.nord12_gui },
+        TSStringEscape = { fg = nord.nord11_gui },
+        TSCharacter = { fg = nord.nord14_gui },
+        ["@comment"] = { fg = nord.nord3_gui_bright },
+        ["@conditional"] = { fg = nord.nord9_gui },
+        ["@function"] = { fg = nord.nord13_gui },
+        ["@method"] = { fg = nord.nord15_gui },
+        ["@function.builtin"] = { fg = nord.nord13_gui },
+        ["@namespace"] = { fg = nord.nord4_gui },
+        ["@field"] = { fg = nord.nord4_gui },
+        ["@property"] = { fg = nord.nord10_gui },
+        ["@keyword"] = { fg = nord.nord9_gui, style = "bold" },
+        ["@keyword.function"] = { fg = nord.nord13_gui },
+        ["@keyword.return"] = { fg = nord.nord15_gui },
+        ["@keyword.operator"] = { fg = nord.nord13_gui },
+        ["@repeat"] = { fg = nord.nord9_gui },
+        ["@string"] = { fg = nord.nord14_gui },
+        ["@string.regex"] = { fg = nord.nord12_gui },
+        ["@string.escape"] = { fg = nord.nord11_gui },
+        ["@character"] = { fg = nord.nord14_gui },
     }
 
     -- treesitter.TSVariableBuiltin = { fg = nord.nord4_gui, style = bold }
