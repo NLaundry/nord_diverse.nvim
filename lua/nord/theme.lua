@@ -33,10 +33,10 @@ theme.loadSyntax = function()
         Structure = { fg = nord.nord7_gui },
         Typedef = { fg = nord.nord14_gui },
 
-        Constant = { fg = nord.nord11_gui },
+        Constant = { fg = nord.nord12_gui },
         Character = { fg = nord.nord5_gui },
-        Number = { fg = nord.nord11_gui },
-        Boolean = { fg = nord.nord11_gui },
+        Number = { fg = nord.nord12_gui },
+        Boolean = { fg = nord.nord12_gui },
         Float = { fg = nord.nord13_gui },
 
         Statement = { fg = nord.nord13_gui },
@@ -85,7 +85,7 @@ theme.loadSyntax = function()
         Keyword = { fg = nord.nord13_gui },
         Repeat = { fg = nord.nord13_gui },
         String = { fg = nord.nord14_gui },
-        Todo = { fg = nord.nord11_gui, bg = nord.none },
+        Todo = { fg = nord.nord13_gui, bg = nord.none },
     }
 end
 
@@ -264,7 +264,7 @@ theme.loadTreeSitter = function()
         TSConstructor = { fg = nord.nord10_gui },
         TSConstant = { fg = nord.nord12_gui },
         TSFloat = { fg = nord.nord13_gui },
-        TSNumber = { fg = nord.nord11_gui },
+        TSNumber = { fg = nord.nord13_gui },
         TSAttribute = { fg = nord.nord12_gui },
         TSError = { fg = nord.nord11_gui },
         TSException = { fg = nord.nord15_gui },
@@ -293,7 +293,7 @@ theme.loadTreeSitter = function()
         ["@constructor"] = { fg = nord.nord10_gui },
         ["@constant"] = { fg = nord.nord12_gui },
         ["@float"] = { fg = nord.nord13_gui },
-        ["@number"] = { fg = nord.nord11_gui },
+        ["@number"] = { fg = nord.nord13_gui },
         ["@attribute"] = { fg = nord.nord12_gui },
         ["@error"] = { fg = nord.nord11_gui },
         ["@exception"] = { fg = nord.nord15_gui },
@@ -347,7 +347,7 @@ theme.loadTreeSitter = function()
         --
         TSVariableBuiltin = { fg = nord.nord4_gui },
         TSBoolean = { fg = nord.nord9_gui },
-        TSConstBuiltin = { fg = nord.nord11_gui },
+        TSConstBuiltin = { fg = nord.nord12_gui },
         TSConstMacro = { fg = nord.nord12_gui },
         TSVariable = { fg = nord.nord4_gui },
         TSTitle = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
@@ -371,7 +371,7 @@ theme.loadTreeSitter = function()
         treesitter.TSProperty = { fg = nord.nord10_gui }
 
        treesitter.TSKeywordFunction = { fg = nord.nord15 } -- 'def' keyword in Pytho
-       treesitter.TSFuncBuiltin = { fg = nord.nord9_gui } -- Function names
+       treesitter.TSFuncBuiltin = { fg = nord.nord15_gui } -- Function names
        treesitter.TSParameter = { fg = nord.nord11_gui } -- Function parameters
         treesitter.TSKeyword = { fg = nord.nord9_gui, style = "bold" }
         treesitter.TSKeywordReturn = { fg = nord.nord15_gui }
@@ -385,7 +385,7 @@ theme.loadTreeSitter = function()
         treesitter["@conditional"] = { fg = nord.nord9_gui }
         treesitter["@function"] = { fg = nord.nord15_gui }
         treesitter["@method"] = { fg = nord.nord15_gui }
-        treesitter["@function.builtin"] = { fg = nord.nord12_gui }
+        treesitter["@function.builtin"] = { fg = nord.nord15_gui }
         treesitter["@namespace"] = { fg = nord.nord4_gui }
         treesitter["@field"] = { fg = nord.nord4_gui }
         treesitter["@property"] = { fg = nord.nord10_gui }
