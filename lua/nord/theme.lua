@@ -78,14 +78,14 @@ theme.loadSyntax = function()
         markdownH2 = { fg = nord.nord9_gui },
         markdownH3 = { fg = nord.nord8_gui },
 
-        Comment = { fg = nord.nord3_gui_bright },
+        Comment = { fg = nord.nord3_gui_bright, style = "italic" },
         Conditional = { fg = nord.nord13_gui },
         Function = { fg = nord.nord8_gui },
         Identifier = { fg = nord.nord9_gui },
         Keyword = { fg = nord.nord13_gui },
         Repeat = { fg = nord.nord13_gui },
         String = { fg = nord.nord14_gui },
-        Todo = { fg = nord.nord13_gui, bg = nord.none },
+        Todo = { fg = nord.nord13_gui, bg = nord.none, style = "italic" },
     }
 end
 
@@ -261,12 +261,12 @@ theme.loadTreeSitter = function()
     -- TreeSitter highlight groups
 
     local treesitter = {
-        TSConstructor = { fg = nord.nord10_gui },
+        TSConstructor = { fg = nord.nord10_gui, style = "bold" },
         TSConstant = { fg = nord.nord12_gui },
         TSFloat = { fg = nord.nord13_gui },
         TSNumber = { fg = nord.nord13_gui },
         TSAttribute = { fg = nord.nord12_gui },
-        TSError = { fg = nord.nord11_gui },
+        TSError = { fg = nord.nord11_gui, style= "bold" },
         TSException = { fg = nord.nord15_gui },
         TSFuncMacro = { fg = nord.nord4_gui },
         TSInclude = { fg = nord.nord10_gui },
@@ -277,7 +277,7 @@ theme.loadTreeSitter = function()
         TSPunctDelimiter = { fg = nord.nord3_gui },
         TSPunctBracket = { fg = nord.nord3_gui },
         TSPunctSpecial = { fg = nord.nord3_gui },
-        TSSymbol = { fg = nord.nord15_gui },
+        TSSymbol = { fg = nord.nord15_gui, style = "italic" },
         TSType = { fg = nord.nord10_gui },
         TSTypeBuiltin = { fg = nord.nord10_gui },
         TSText = { fg = nord.nord14_gui },
@@ -288,7 +288,7 @@ theme.loadTreeSitter = function()
         TSURI = { fg = nord.nord7_gui },
         TSAnnotation = { fg = nord.nord12_gui },
 
-        ["@constructor"] = { fg = nord.nord10_gui },
+        ["@constructor"] = { fg = nord.nord10_gui, style= "bold"},
         ["@constant"] = { fg = nord.nord12_gui },
         ["@float"] = { fg = nord.nord13_gui },
         ["@number"] = { fg = nord.nord13_gui },
@@ -303,7 +303,7 @@ theme.loadTreeSitter = function()
         ["@punctuation.delimiter"] = { fg = nord.nord3_gui },
         ["@punctuation.bracket"] = { fg = nord.nord3_gui },
         ["@punctuation.special"] = { fg = nord.nord3_gui },
-        ["@symbol"] = { fg = nord.nord15_gui },
+        ["@symbol"] = { fg = nord.nord15_gui , style="italic"},
         ["@type"] = { fg = nord.nord10_gui },
         ["@type.builtin"] = { fg = nord.nord10_gui },
         ["@tag"] = { fg = nord.nord15_gui },
@@ -328,28 +328,14 @@ theme.loadTreeSitter = function()
         ["@tag.attribute"] = { fg = nord.nord15_gui },
         ["@string.special"] = { fg = nord.nord13_gui },
 
-        -- @todo Missing highlights
-        -- @function.call
-        -- @method.call
-        -- @type.qualifier
-        -- @text.math (e.g. for LaTeX math environments)
-        -- @text.environment (e.g. for text environments of markup languages)
-        -- @text.environment.name (e.g. for the name/the string indicating the type of text environment)
-        -- @text.note
-        -- @text.warning
-        -- @text.danger
-        -- @tag.attribute
-        -- @string.special
-        --
-        --
-        --
         TSVariableBuiltin = { fg = nord.nord4_gui },
         TSBoolean = { fg = nord.nord9_gui },
         TSConstBuiltin = { fg = nord.nord12_gui },
         TSConstMacro = { fg = nord.nord12_gui },
         TSVariable = { fg = nord.nord4_gui },
+        -- Bold for Title to emphasize its importance
         TSTitle = { fg = nord.nord10_gui, bg = nord.none, style = "bold" },
-        
+
         TSTag = { fg = nord.nord15_gui },
         TSTagDelimiter = { fg = nord.nord3_gui },
     }
@@ -362,7 +348,7 @@ theme.loadTreeSitter = function()
         treesitter["@constant.macro"] = { fg = nord.nord12_gui }
         treesitter["@text.title"] = { fg = nord.nord10_gui, bg = nord.none, style = "bold" }
         treesitter["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none }
-        treesitter.TSComment = { fg = nord.nord3_gui_bright }
+        treesitter.TSComment = { fg = nord.nord3_gui_bright, style="italic" }
         treesitter.TSConditional = { fg = nord.nord9_gui }
         treesitter.TSFunction = { fg = nord.nord10_gui }
         treesitter.TSMethod = { fg = nord.nord15_gui }
@@ -382,7 +368,7 @@ theme.loadTreeSitter = function()
         treesitter.TSStringRegex = { fg = nord.nord12_gui }
         treesitter.TSStringEscape = { fg = nord.nord11_gui }
         treesitter.TSCharacter = { fg = nord.nord14_gui }
-        treesitter["@comment"] = { fg = nord.nord3_gui_bright }
+        treesitter["@comment"] = { fg = nord.nord3_gui_bright, style="italic" }
         treesitter["@conditional"] = { fg = nord.nord9_gui }
         treesitter["@function"] = { fg = nord.nord15_gui }
         treesitter["@method"] = { fg = nord.nord15_gui }
